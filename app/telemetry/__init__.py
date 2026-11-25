@@ -1,0 +1,1 @@
+"""Inference telemetry persistence abstractions."""

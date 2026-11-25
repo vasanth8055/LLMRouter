@@ -1,0 +1,32 @@
+{
+  "experiment": "Router V2.2 quality-cost frontier",
+  "quality_targets_fixed_before_test_evaluation": [
+    0.8,
+    0.85,
+    0.9,
+    0.95
+  ],
+  "loaded_v21_model_sha256_before": "f2041eddfff07cebb0ab62cb2c6496e6558adfc7c97a8bf2670880cd145ab4bc",
+  "loaded_v21_model_sha256_after": "f2041eddfff07cebb0ab62cb2c6496e6558adfc7c97a8bf2670880cd145ab4bc",
+  "v21_model_unchanged": true,
+  "v21_split_sha256_before": "cc526bfddc2c5ed67a51e97697edc478eaafc983948db2dd800913c8d83cf88f",
+  "v21_split_sha256_after": "cc526bfddc2c5ed67a51e97697edc478eaafc983948db2dd800913c8d83cf88f",
+  "v21_split_unchanged": true,
+  "v21_test_prompt_count": 450,
+  "v21_test_ids_match_frozen_predictions": true,
+  "train_test_overlap": 0,
+  "validation_test_overlap": 0,
+  "test_row_count": 1350,
+  "q_targets_deterministic": true,
+  "training_cost_basis": {
+    "deepseek-v3-0324": 0.0005859681380952381,
+    "gemini-2.5-flash": 0.0036102670476190475,
+    "gemini-2.5-pro": 0.03884735892857143
+  },
+  "test_cost_or_score_used_for_routing": false,
+  "per_prompt_realized_cost_used_for_model_ordering": false,
+  "test_used_for_tuning": false,
+  "predictions_match_frozen_v21_test_artifact": true,
+  "v21_selected_threshold_unchanged": 0.9,
+  "plot": null
+}

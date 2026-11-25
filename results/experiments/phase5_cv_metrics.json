@@ -1,0 +1,342 @@
+{
+  "fold_summaries": [
+    {
+      "fold": 1,
+      "train_questions": 2400,
+      "test_questions": 600,
+      "model_a_selected_tau": 0.85,
+      "model_a_inner_val_savings": 0.3452437373501747,
+      "model_b_selected_tau": 0.86,
+      "model_b_inner_val_savings": 0.28520152088260803
+    },
+    {
+      "fold": 2,
+      "train_questions": 2400,
+      "test_questions": 600,
+      "model_a_selected_tau": 0.87,
+      "model_a_inner_val_savings": 0.22457295621196677,
+      "model_b_selected_tau": 0.86,
+      "model_b_inner_val_savings": 0.3271559923962717
+    },
+    {
+      "fold": 3,
+      "train_questions": 2400,
+      "test_questions": 600,
+      "model_a_selected_tau": 0.88,
+      "model_a_inner_val_savings": 0.17942194834817748,
+      "model_b_selected_tau": 0.85,
+      "model_b_inner_val_savings": 0.3402562791258946
+    },
+    {
+      "fold": 4,
+      "train_questions": 2400,
+      "test_questions": 600,
+      "model_a_selected_tau": 0.85,
+      "model_a_inner_val_savings": 0.3397482914789397,
+      "model_b_selected_tau": 0.86,
+      "model_b_inner_val_savings": 0.33579073727320713
+    },
+    {
+      "fold": 5,
+      "train_questions": 2400,
+      "test_questions": 600,
+      "model_a_selected_tau": 0.86,
+      "model_a_inner_val_savings": 0.2955541936140117,
+      "model_b_selected_tau": 0.88,
+      "model_b_inner_val_savings": 0.25413123579642216
+    }
+  ],
+  "systems": {
+    "deepseek": {
+      "name": "Always DeepSeek",
+      "accuracy": 0.78,
+      "accuracy_pct": 78.0,
+      "accuracy_95ci": [
+        0.765,
+        0.7946666666666666
+      ],
+      "accuracy_diff_vs_pro": -0.07666666666666666,
+      "accuracy_diff_vs_pro_pct": -7.666666666666666,
+      "accuracy_diff_vs_pro_95ci": [
+        -0.09066666666666656,
+        -0.06299999999999994
+      ],
+      "quality_retention_pct": 91.05058365758755,
+      "meets_98pct_retention_target": false,
+      "total_recorded_cost": 1.761205429999957,
+      "mean_recorded_cost": 0.0005870684766666524,
+      "cost_savings_vs_pro_pct": 98.49706805224075,
+      "cost_savings_vs_pro_95ci": [
+        98.45610566799265,
+        98.53581860925172
+      ],
+      "significance_vs_pro": {
+        "discordant_a_correct_b_wrong": 121,
+        "discordant_a_wrong_b_correct": 351,
+        "total_discordant": 472,
+        "p_value": 5.021300472279861e-27
+      },
+      "significance_vs_flash": {
+        "discordant_a_correct_b_wrong": 210,
+        "discordant_a_wrong_b_correct": 298,
+        "total_discordant": 508,
+        "p_value": 0.00010932902264914468
+      },
+      "accuracy_diff_vs_flash_95ci": [
+        -0.04400000000000004,
+        -0.014666666666666717
+      ],
+      "routing_distribution": {}
+    },
+    "flash": {
+      "name": "Always Gemini Flash",
+      "accuracy": 0.8093333333333333,
+      "accuracy_pct": 80.93333333333334,
+      "accuracy_95ci": [
+        0.795,
+        0.8233333333333334
+      ],
+      "accuracy_diff_vs_pro": -0.04733333333333334,
+      "accuracy_diff_vs_pro_pct": -4.733333333333334,
+      "accuracy_diff_vs_pro_95ci": [
+        -0.05933333333333335,
+        -0.03500000000000003
+      ],
+      "quality_retention_pct": 94.47470817120622,
+      "meets_98pct_retention_target": false,
+      "total_recorded_cost": 10.9599494,
+      "mean_recorded_cost": 0.0036533164666666664,
+      "cost_savings_vs_pro_pct": 90.64728178865246,
+      "cost_savings_vs_pro_95ci": [
+        89.58699349774163,
+        91.59875281524596
+      ],
+      "significance_vs_pro": {
+        "discordant_a_correct_b_wrong": 104,
+        "discordant_a_wrong_b_correct": 246,
+        "total_discordant": 350,
+        "p_value": 2.1172534268828554e-14
+      },
+      "significance_vs_flash": {
+        "discordant_a_correct_b_wrong": 0,
+        "discordant_a_wrong_b_correct": 0,
+        "total_discordant": 0,
+        "p_value": 1.0
+      },
+      "accuracy_diff_vs_flash_95ci": [
+        0.0,
+        0.0
+      ],
+      "routing_distribution": {}
+    },
+    "pro": {
+      "name": "Always Gemini Pro",
+      "accuracy": 0.8566666666666667,
+      "accuracy_pct": 85.66666666666667,
+      "accuracy_95ci": [
+        0.8436666666666667,
+        0.869
+      ],
+      "accuracy_diff_vs_pro": 0.0,
+      "accuracy_diff_vs_pro_pct": 0.0,
+      "accuracy_diff_vs_pro_95ci": [
+        0.0,
+        0.0
+      ],
+      "quality_retention_pct": 100.0,
+      "meets_98pct_retention_target": true,
+      "total_recorded_cost": 117.1846425,
+      "mean_recorded_cost": 0.0390615475,
+      "cost_savings_vs_pro_pct": 0.0,
+      "cost_savings_vs_pro_95ci": [
+        0.0,
+        0.0
+      ],
+      "significance_vs_pro": {
+        "discordant_a_correct_b_wrong": 0,
+        "discordant_a_wrong_b_correct": 0,
+        "total_discordant": 0,
+        "p_value": 1.0
+      },
+      "significance_vs_flash": {
+        "discordant_a_correct_b_wrong": 246,
+        "discordant_a_wrong_b_correct": 104,
+        "total_discordant": 350,
+        "p_value": 2.1172534268828554e-14
+      },
+      "accuracy_diff_vs_flash_95ci": [
+        0.03533333333333333,
+        0.059666666666666646
+      ],
+      "routing_distribution": {}
+    },
+    "v21": {
+      "name": "Frozen Router V2.1",
+      "accuracy": 0.8563333333333333,
+      "accuracy_pct": 85.63333333333333,
+      "accuracy_95ci": [
+        0.8436666666666667,
+        0.8686666666666667
+      ],
+      "accuracy_diff_vs_pro": -0.00033333333333340764,
+      "accuracy_diff_vs_pro_pct": -0.033333333333340764,
+      "accuracy_diff_vs_pro_95ci": [
+        -0.002666666666666595,
+        0.0019999999999998908
+      ],
+      "quality_retention_pct": 99.96108949416342,
+      "meets_98pct_retention_target": true,
+      "total_recorded_cost": 105.09886945,
+      "mean_recorded_cost": 0.03503295648333333,
+      "cost_savings_vs_pro_pct": 10.313444485697007,
+      "cost_savings_vs_pro_95ci": [
+        8.97811387870185,
+        11.775370118464949
+      ],
+      "significance_vs_pro": {
+        "discordant_a_correct_b_wrong": 5,
+        "discordant_a_wrong_b_correct": 6,
+        "total_discordant": 11,
+        "p_value": 1.0
+      },
+      "significance_vs_flash": {
+        "discordant_a_correct_b_wrong": 244,
+        "discordant_a_wrong_b_correct": 103,
+        "total_discordant": 347,
+        "p_value": 2.494769439954174e-14
+      },
+      "accuracy_diff_vs_flash_95ci": [
+        0.03500000000000003,
+        0.05900000000000005
+      ],
+      "routing_distribution": {
+        "counts": {
+          "deepseek-v3-0324": 226,
+          "gemini-2.5-flash": 174,
+          "gemini-2.5-pro": 2600
+        },
+        "percentages": {
+          "deepseek-v3-0324": 7.533333333333333,
+          "gemini-2.5-flash": 5.800000000000001,
+          "gemini-2.5-pro": 86.66666666666667
+        },
+        "fallback_count": 1613,
+        "fallback_rate_pct": 53.766666666666666,
+        "gemini_pro_qualified": 987,
+        "gemini_pro_fallback": 1613
+      }
+    },
+    "model_a": {
+      "name": "Candidate 1 (Text-only)",
+      "accuracy": 0.837,
+      "accuracy_pct": 83.7,
+      "accuracy_95ci": [
+        0.8236666666666667,
+        0.85
+      ],
+      "accuracy_diff_vs_pro": -0.01966666666666672,
+      "accuracy_diff_vs_pro_pct": -1.9666666666666721,
+      "accuracy_diff_vs_pro_95ci": [
+        -0.027000000000000024,
+        -0.012666666666666604
+      ],
+      "quality_retention_pct": 97.70428015564202,
+      "meets_98pct_retention_target": false,
+      "total_recorded_cost": 81.54668235999999,
+      "mean_recorded_cost": 0.02718222745333333,
+      "cost_savings_vs_pro_pct": 30.41180088081935,
+      "cost_savings_vs_pro_95ci": [
+        28.23493809634055,
+        32.71116434670927
+      ],
+      "significance_vs_pro": {
+        "discordant_a_correct_b_wrong": 30,
+        "discordant_a_wrong_b_correct": 89,
+        "total_discordant": 119,
+        "p_value": 5.6882868507839105e-08
+      },
+      "significance_vs_flash": {
+        "discordant_a_correct_b_wrong": 216,
+        "discordant_a_wrong_b_correct": 133,
+        "total_discordant": 349,
+        "p_value": 1.0389847971280909e-05
+      },
+      "accuracy_diff_vs_flash_95ci": [
+        0.015666666666666607,
+        0.03966666666666663
+      ],
+      "routing_distribution": {
+        "counts": {
+          "deepseek-v3-0324": 619,
+          "gemini-2.5-flash": 426,
+          "gemini-2.5-pro": 1955
+        },
+        "percentages": {
+          "deepseek-v3-0324": 20.633333333333333,
+          "gemini-2.5-flash": 14.2,
+          "gemini-2.5-pro": 65.16666666666666
+        },
+        "fallback_count": 1101,
+        "fallback_rate_pct": 36.7,
+        "gemini_pro_qualified": 854,
+        "gemini_pro_fallback": 1101
+      }
+    },
+    "model_b": {
+      "name": "Candidate 2 (Subject-aware)",
+      "accuracy": 0.8316666666666667,
+      "accuracy_pct": 83.16666666666667,
+      "accuracy_95ci": [
+        0.818,
+        0.845
+      ],
+      "accuracy_diff_vs_pro": -0.025000000000000022,
+      "accuracy_diff_vs_pro_pct": -2.500000000000002,
+      "accuracy_diff_vs_pro_95ci": [
+        -0.03266666666666673,
+        -0.01766666666666672
+      ],
+      "quality_retention_pct": 97.08171206225681,
+      "meets_98pct_retention_target": false,
+      "total_recorded_cost": 77.97330887999999,
+      "mean_recorded_cost": 0.025991102959999998,
+      "cost_savings_vs_pro_pct": 33.461153939177656,
+      "cost_savings_vs_pro_95ci": [
+        31.226479997552616,
+        35.738593101203385
+      ],
+      "significance_vs_pro": {
+        "discordant_a_correct_b_wrong": 29,
+        "discordant_a_wrong_b_correct": 104,
+        "total_discordant": 133,
+        "p_value": 4.1196098160131155e-11
+      },
+      "significance_vs_flash": {
+        "discordant_a_correct_b_wrong": 212,
+        "discordant_a_wrong_b_correct": 145,
+        "total_discordant": 357,
+        "p_value": 0.0004611939738788905
+      },
+      "accuracy_diff_vs_flash_95ci": [
+        0.010000000000000009,
+        0.03466666666666662
+      ],
+      "routing_distribution": {
+        "counts": {
+          "deepseek-v3-0324": 798,
+          "gemini-2.5-flash": 375,
+          "gemini-2.5-pro": 1827
+        },
+        "percentages": {
+          "deepseek-v3-0324": 26.6,
+          "gemini-2.5-flash": 12.5,
+          "gemini-2.5-pro": 60.9
+        },
+        "fallback_count": 1135,
+        "fallback_rate_pct": 37.833333333333336,
+        "gemini_pro_qualified": 692,
+        "gemini_pro_fallback": 1135
+      }
+    }
+  }
+}

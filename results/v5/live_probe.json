@@ -1,0 +1,129 @@
+{
+  "timestamp": "2026-11-25T06:24:54.755354+00:00",
+  "validation_label": "BLOCKED (no live models fully configured)",
+  "dotenv_key_statuses": {
+    "DEEPSEEK_API_KEY": "EMPTY_OR_PLACEHOLDER",
+    "GEMINI_API_KEY": "EMPTY_OR_PLACEHOLDER",
+    "OPENAI_API_KEY": "EMPTY_OR_PLACEHOLDER",
+    "AWS_REGION": "EMPTY_OR_PLACEHOLDER",
+    "DEEPSEEK_API_MODEL": "EMPTY_OR_PLACEHOLDER",
+    "GEMINI_FLASH_API_MODEL": "SET",
+    "GEMINI_PRO_API_MODEL": "EMPTY_OR_PLACEHOLDER"
+  },
+  "callable_models": [],
+  "models": [
+    {
+      "canonical_model": "deepseek-v3-0324",
+      "provider": "deepseek",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "api_key_present": false,
+      "api_model_env": "DEEPSEEK_API_MODEL",
+      "api_model_id": null,
+      "live_callable": false,
+      "reason": "missing DEEPSEEK_API_KEY; missing DEEPSEEK_API_MODEL",
+      "benchmark_input_price_per_million": 0.25,
+      "benchmark_output_price_per_million": 0.88,
+      "live_input_price_per_million": null,
+      "live_output_price_per_million": null
+    },
+    {
+      "canonical_model": "gemini-2.5-flash",
+      "provider": "gemini",
+      "api_key_env": "GEMINI_API_KEY",
+      "api_key_present": false,
+      "api_model_env": "GEMINI_FLASH_API_MODEL",
+      "api_model_id": "gemini-3.8-flash",
+      "live_callable": false,
+      "reason": "missing GEMINI_API_KEY",
+      "benchmark_input_price_per_million": 0.3,
+      "benchmark_output_price_per_million": 2.5,
+      "live_input_price_per_million": null,
+      "live_output_price_per_million": null
+    },
+    {
+      "canonical_model": "gemini-2.5-pro",
+      "provider": "gemini",
+      "api_key_env": "GEMINI_API_KEY",
+      "api_key_present": false,
+      "api_model_env": "GEMINI_PRO_API_MODEL",
+      "api_model_id": null,
+      "live_callable": false,
+      "reason": "missing GEMINI_API_KEY; missing GEMINI_PRO_API_MODEL",
+      "benchmark_input_price_per_million": 1.25,
+      "benchmark_output_price_per_million": 10.0,
+      "live_input_price_per_million": null,
+      "live_output_price_per_million": null
+    }
+  ],
+  "probe_prompt_count": 3,
+  "probe_question_ids": [
+    265,
+    2005,
+    2372
+  ],
+  "probe_model_summaries": {
+    "deepseek-v3-0324": {
+      "live_callable": false,
+      "reason": "missing DEEPSEEK_API_KEY; missing DEEPSEEK_API_MODEL",
+      "attempted": 0,
+      "succeeded": 0,
+      "rate_limited": 0,
+      "errors": []
+    },
+    "gemini-2.5-flash": {
+      "live_callable": false,
+      "reason": "missing GEMINI_API_KEY",
+      "attempted": 0,
+      "succeeded": 0,
+      "rate_limited": 0,
+      "errors": []
+    },
+    "gemini-2.5-pro": {
+      "live_callable": false,
+      "reason": "missing GEMINI_API_KEY; missing GEMINI_PRO_API_MODEL",
+      "attempted": 0,
+      "succeeded": 0,
+      "rate_limited": 0,
+      "errors": []
+    }
+  },
+  "cost_estimate_n60": {
+    "n_prompts": 60,
+    "estimated_always_model_usd_benchmark_rates": {
+      "deepseek-v3-0324": 0.032799,
+      "gemini-2.5-flash": 0.304224,
+      "gemini-2.5-pro": 2.119057
+    },
+    "estimated_v21_routed_usd_benchmark_rates": 1.948436,
+    "v21_predicted_route_counts": {
+      "deepseek-v3-0324": 2,
+      "gemini-2.5-flash": 6,
+      "gemini-2.5-pro": 52
+    }
+  },
+  "cost_estimate_n150": {
+    "n_prompts": 150,
+    "estimated_always_model_usd_benchmark_rates": {
+      "deepseek-v3-0324": 0.085429,
+      "gemini-2.5-flash": 0.339924,
+      "gemini-2.5-pro": 5.594934
+    },
+    "estimated_v21_routed_usd_benchmark_rates": 4.984235,
+    "v21_predicted_route_counts": {
+      "deepseek-v3-0324": 10,
+      "gemini-2.5-flash": 12,
+      "gemini-2.5-pro": 128
+    }
+  },
+  "mocked_deepseek_failover_check": {
+    "note": "Mocked DeepSeek failover simulation (NOT a live DeepSeek call).",
+    "selected_model": "gemini-2.5-flash",
+    "attempted_models": [
+      "deepseek-v3-0324",
+      "gemini-2.5-flash"
+    ],
+    "failover": true,
+    "policy_fallback": false,
+    "retry_count": 0
+  }
+}

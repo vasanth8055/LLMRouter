@@ -1,0 +1,11 @@
+{
+  "test_prompt_count": 450,
+  "test_row_count": 1350,
+  "train_test_overlap": 0,
+  "validation_test_overlap": 0,
+  "thresholds": {
+    "V2.1 TF-IDF": 0.9
+  },
+  "test_used_for_training_or_threshold_selection": false,
+  "evaluation_timestamp": "2026-10-01T20:01:32.425405+05:30"
+}

@@ -1,0 +1,319 @@
+{
+  "timestamp": "2026-11-25T07:07:33.784916+00:00",
+  "cached_minilm_cold_start": {
+    "import_ms": 5591.224999981932,
+    "load_cached_ms": 310.08080003084615,
+    "first_encode_ms": 37.98490000190213,
+    "total_cached_cold_start_ms": 5939.290700014681
+  },
+  "attempt_c_subject_metadata": {
+    "folds": [
+      {
+        "fold": 1,
+        "selected_tau": 0.9
+      },
+      {
+        "fold": 2,
+        "selected_tau": 0.9
+      },
+      {
+        "fold": 3,
+        "selected_tau": 0.85
+      },
+      {
+        "fold": 4,
+        "selected_tau": 0.85
+      },
+      {
+        "fold": 5,
+        "selected_tau": 0.9
+      }
+    ],
+    "calibration": {
+      "ece_10bin": 0.02199301921912773,
+      "brier_score": 0.14598366414820152
+    },
+    "metrics": {
+      "name": "Attempt 5c: TF-IDF + subject + prompt metadata (requires subject label at inference)",
+      "accuracy": 0.8383333333333334,
+      "accuracy_95ci": [
+        0.8253333333333334,
+        0.8513333333333334
+      ],
+      "pro_retention_pct": 97.85992217898834,
+      "savings_vs_pro_pct": 25.55139072937822,
+      "savings_vs_pro_95ci_pct": [
+        23.606756242671032,
+        27.65168055648065
+      ],
+      "fallback_rate_pct": 48.36666666666667,
+      "ni_lb_pp": -2.500000000000002,
+      "mcnemar_vs_pro_p": 4.980762968257179e-08,
+      "mcnemar_vs_flash_p": 3.974643024543133e-06,
+      "routing_share_pct": {
+        "deepseek-v3-0324": 20.96666666666667,
+        "gemini-2.5-flash": 9.5,
+        "gemini-2.5-pro": 69.53333333333333
+      },
+      "passes_quality_cost_gate": false
+    },
+    "latency": {
+      "cold_start_ms": 169.30470004444942,
+      "p50_ms": 16.511600028024986,
+      "p95_ms": 24.731424995115955,
+      "p99_ms": 30.38544397160878,
+      "passes_p95_25ms_gate": true
+    }
+  },
+  "attempt_d_platt_frontier": {
+    "floors": [
+      {
+        "floor": 0.8,
+        "accuracy_pct": 81.3,
+        "accuracy_95ci_pct": [
+          79.86666666666666,
+          82.66666666666667
+        ],
+        "retention_pct": 94.90272373540856,
+        "retention_95ci_pct": [
+          93.72544111984416,
+          96.04234786875199
+        ],
+        "savings_pct": 55.40764248182095,
+        "savings_95ci_pct": [
+          52.97438300873501,
+          57.91803840468932
+        ],
+        "fallback_pct": 15.833333333333332,
+        "fallback_95ci_pct": [
+          14.533333333333335,
+          17.166666666666668
+        ],
+        "ni_lb_pp": -5.399999999999993,
+        "mcnemar_vs_pro_p": 1.5912368178114028e-17,
+        "mcnemar_vs_flash_p": 0.5848855564992009,
+        "routing_share_pct": {
+          "deepseek-v3-0324": 39.4,
+          "gemini-2.5-flash": 23.966666666666665,
+          "gemini-2.5-pro": 36.63333333333333
+        }
+      },
+      {
+        "floor": 0.825,
+        "accuracy_pct": 83.1,
+        "accuracy_95ci_pct": [
+          81.73333333333333,
+          84.43333333333334
+        ],
+        "retention_pct": 97.00389105058365,
+        "retention_95ci_pct": [
+          96.05210165472953,
+          97.95758051846033
+        ],
+        "savings_pct": 41.967540789314604,
+        "savings_95ci_pct": [
+          39.59741423885059,
+          44.34921595658261
+        ],
+        "fallback_pct": 25.0,
+        "fallback_95ci_pct": [
+          23.433333333333334,
+          26.566666666666666
+        ],
+        "ni_lb_pp": -3.3675000000000055,
+        "mcnemar_vs_pro_p": 1.0113525726969985e-09,
+        "mcnemar_vs_flash_p": 0.0002973294213682855,
+        "routing_share_pct": {
+          "deepseek-v3-0324": 23.5,
+          "gemini-2.5-flash": 26.066666666666666,
+          "gemini-2.5-pro": 50.43333333333333
+        }
+      },
+      {
+        "floor": 0.85,
+        "accuracy_pct": 84.06666666666666,
+        "accuracy_95ci_pct": [
+          82.73333333333333,
+          85.33416666666666
+        ],
+        "retention_pct": 98.13229571984435,
+        "retention_95ci_pct": [
+          97.37449391487024,
+          98.88678749090998
+        ],
+        "savings_pct": 27.636040678282566,
+        "savings_95ci_pct": [
+          25.55076730700988,
+          29.79567064592681
+        ],
+        "fallback_pct": 37.6,
+        "fallback_95ci_pct": [
+          35.86666666666667,
+          39.33333333333333
+        ],
+        "ni_lb_pp": -2.2666666666666613,
+        "mcnemar_vs_pro_p": 2.1476915287407434e-06,
+        "mcnemar_vs_flash_p": 6.897040814475433e-08,
+        "routing_share_pct": {
+          "deepseek-v3-0324": 11.066666666666666,
+          "gemini-2.5-flash": 22.5,
+          "gemini-2.5-pro": 66.43333333333334
+        }
+      },
+      {
+        "floor": 0.875,
+        "accuracy_pct": 84.76666666666667,
+        "accuracy_95ci_pct": [
+          83.46666666666667,
+          86.03333333333333
+        ],
+        "retention_pct": 98.94941634241246,
+        "retention_95ci_pct": [
+          98.39968774395005,
+          99.49060059957736
+        ],
+        "savings_pct": 16.455194852004613,
+        "savings_95ci_pct": [
+          14.839655269461543,
+          18.181553412310514
+        ],
+        "fallback_pct": 55.900000000000006,
+        "fallback_95ci_pct": [
+          54.13333333333333,
+          57.666666666666664
+        ],
+        "ni_lb_pp": -1.3666666666666716,
+        "mcnemar_vs_pro_p": 0.00014197068519905542,
+        "mcnemar_vs_flash_p": 9.571612924442781e-11,
+        "routing_share_pct": {
+          "deepseek-v3-0324": 4.933333333333334,
+          "gemini-2.5-flash": 15.466666666666667,
+          "gemini-2.5-pro": 79.60000000000001
+        }
+      },
+      {
+        "floor": 0.9,
+        "accuracy_pct": 85.53333333333333,
+        "accuracy_95ci_pct": [
+          84.26666666666667,
+          86.76666666666667
+        ],
+        "retention_pct": 99.84435797665368,
+        "retention_95ci_pct": [
+          99.5317941047203,
+          100.15455950540957
+        ],
+        "savings_pct": 6.843113473678941,
+        "savings_95ci_pct": [
+          5.77392751481884,
+          7.9952551350892405
+        ],
+        "fallback_pct": 76.0,
+        "fallback_95ci_pct": [
+          74.43333333333332,
+          77.5
+        ],
+        "ni_lb_pp": -0.40000000000000036,
+        "mcnemar_vs_pro_p": 0.454498291015625,
+        "mcnemar_vs_flash_p": 3.3941953723022076e-14,
+        "routing_share_pct": {
+          "deepseek-v3-0324": 1.7333333333333332,
+          "gemini-2.5-flash": 7.233333333333333,
+          "gemini-2.5-pro": 91.03333333333333
+        }
+      },
+      {
+        "floor": 0.925,
+        "accuracy_pct": 85.7,
+        "accuracy_95ci_pct": [
+          84.43333333333334,
+          86.93333333333332
+        ],
+        "retention_pct": 100.03891050583658,
+        "retention_95ci_pct": [
+          99.92175273865416,
+          100.15760596598241
+        ],
+        "savings_pct": 2.6673986311815554,
+        "savings_95ci_pct": [
+          2.03466436975327,
+          3.359809759096829
+        ],
+        "fallback_pct": 90.93333333333334,
+        "fallback_95ci_pct": [
+          89.86666666666666,
+          91.93333333333334
+        ],
+        "ni_lb_pp": -0.06666666666667043,
+        "mcnemar_vs_pro_p": 1.0,
+        "mcnemar_vs_flash_p": 1.2497351717640988e-14,
+        "routing_share_pct": {
+          "deepseek-v3-0324": 0.46666666666666673,
+          "gemini-2.5-flash": 3.2,
+          "gemini-2.5-pro": 96.33333333333334
+        }
+      },
+      {
+        "floor": 0.95,
+        "accuracy_pct": 85.66666666666667,
+        "accuracy_95ci_pct": [
+          84.39999999999999,
+          86.9
+        ],
+        "retention_pct": 100.0,
+        "retention_95ci_pct": [
+          100.0,
+          100.0
+        ],
+        "savings_pct": 0.7867950358768151,
+        "savings_95ci_pct": [
+          0.4656764435574754,
+          1.1600494684912785
+        ],
+        "fallback_pct": 97.5,
+        "fallback_95ci_pct": [
+          96.93333333333334,
+          98.06666666666666
+        ],
+        "ni_lb_pp": 0.0,
+        "mcnemar_vs_pro_p": 1.0,
+        "mcnemar_vs_flash_p": 2.1172534268828554e-14,
+        "routing_share_pct": {
+          "deepseek-v3-0324": 0.0,
+          "gemini-2.5-flash": 0.9333333333333335,
+          "gemini-2.5-pro": 99.06666666666666
+        }
+      }
+    ]
+  },
+  "final_chosen_router": "5a-platt (Platt-calibrated V2.1 TF-IDF + LR)",
+  "final_router_concurrency_500req": [
+    {
+      "concurrency": 1,
+      "n_requests": 500,
+      "wall_time_s": 2.483728200022597,
+      "throughput_rps": 201.31027219300847,
+      "p50_ms": 4.3705500138457865,
+      "p95_ms": 7.509345017024316,
+      "p99_ms": 9.242562988074495
+    },
+    {
+      "concurrency": 10,
+      "n_requests": 500,
+      "wall_time_s": 2.779118299949914,
+      "throughput_rps": 179.9131760634339,
+      "p50_ms": 29.070949967717752,
+      "p95_ms": 60.52716501872053,
+      "p99_ms": 77.97993795480578
+    },
+    {
+      "concurrency": 50,
+      "n_requests": 500,
+      "wall_time_s": 2.5205455000395887,
+      "throughput_rps": 198.36975765450248,
+      "p50_ms": 125.17315000877716,
+      "p95_ms": 234.45972500776404,
+      "p99_ms": 271.16964302549604
+    }
+  ]
+}
